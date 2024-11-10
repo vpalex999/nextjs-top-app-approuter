@@ -1,6 +1,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --black: #3b434e;
+  --white: white;
+  --gray-light: #ebebeb;
+
+  --primary: #7653fc;
+  --primary-hover: #6344df;
+
+  --red: #fc836d;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
 }
 
 @media (prefers-color-scheme: dark) {
