@@ -1,4 +1,4 @@
-import { Button, Htag, Paragraph } from "@/components";
+import { Button, Htag, Paragraph, Tag } from "@/components";
 
 export default function Home() {
   return (
@@ -14,6 +14,9 @@ export default function Home() {
       <Paragraph size="l">Paragraph big size</Paragraph>
       <Paragraph size="m">Paragraph medium size</Paragraph>
       <Paragraph size="s">Paragraph small size</Paragraph>
+      <Tag size="s">Мал</Tag>
+      <Tag size="m" color="red">Red</Tag>
+      <Tag size="s" color='green'>Green</Tag>
     </div>
   );
 }
