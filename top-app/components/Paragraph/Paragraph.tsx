@@ -5,15 +5,17 @@ import cn from "classnames";
 export const Paragraph = ({
   children,
   className,
-  appearance = "big",
+  size = "m",
+  ...props
 }: ParagraphProps) => {
   return (
     <p
       className={cn(styles.paragraph, className, {
-        [styles.big]: appearance === "big",
-        [styles.medium]: appearance === "medium",
-        [styles.small]: appearance === "small",
+        [styles.l]: size === "l",
+        [styles.m]: size === "m",
+        [styles.s]: size === "s",
       })}
+      {...props}
     >
       {children}
     </p>

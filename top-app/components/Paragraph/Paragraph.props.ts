@@ -6,5 +6,5 @@ export interface ParagraphProps
     HTMLParagraphElement
   > {
   children: ReactNode;
-  appearance?: "big" | "medium" | "small";
+  size?: "l" | "m" | "s";
 }
