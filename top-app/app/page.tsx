@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Button, Htag, Paragraph, Tag } from "@/components";
+import { Button, Htag, Paragraph, Rating, Tag } from "@/components";
 import { useState } from "react";
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
       <Tag size="s" color="green">
         Green
       </Tag>
+      <Rating rating={4} />
     </div>
   );
 }
