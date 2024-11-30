@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Team",
 };
 
-export default function About() {
+export default function Team() {
   return (
     <div>
       <Paragraph>Команда</Paragraph>
