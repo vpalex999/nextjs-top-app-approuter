@@ -10,7 +10,7 @@ export default function Grid() {
   return (
     <section className={cn(styles.section)}>
       <div className={cn(styles.container)}>
-        <div>1</div>
+        <div style={{ justifySelf: "right", alignSelf: "start" }}>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
