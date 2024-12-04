@@ -4,8 +4,9 @@
 
 .container {
     display: grid;
-    border: 2px solid white;
-    height: 500px;
+    gap: 10px;
+    grid-template-columns: [startline] 1fr [middleline] 1fr 1fr [endline];
+    grid-auto-rows: 100px;
 }
 
 .container>div {
@@ -16,4 +17,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-auto-flow: row;
+}
+
+.c1 {
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+
+    /* занять 2-ячейки */
+    /* grid-column: 1 / 3;  */
+
+    /* занять 2-ячейки */
+    /* grid-column-start: 1;
+    grid-column-end: span 2; */
+
+    /* занять 3-ячейки */
+    /* grid-column: 1 / span 3; */
+
+    grid-column-start: middleline;
+    grid-column-end: endline;
+
 }
