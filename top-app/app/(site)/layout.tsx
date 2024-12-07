@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import RootLayoutContainer from "@/components/layout/LayoutContainer";
 
 const inter = Inter({ subsets: ["cyrillic"] });
 
@@ -30,16 +31,8 @@ export default function RootLayout({
     <html lang="en">
       {/* <body className={`${geistSans.variable} ${geistMono.variable}`}> */}
       <body className={inter.className}>
-        <nav style={{border: 'solid 1px green'}}>
-          <ul>
-            <li>Курсы</li>
-            <li>Для детей</li>
-            <li>О нас</li>
-          </ul>
-        </nav>
-        {children}
+        <RootLayoutContainer>{children}</RootLayoutContainer>
       </body>
-      {/* <body>{children}</body> */}
     </html>
   );
 }

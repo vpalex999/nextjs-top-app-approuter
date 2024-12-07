@@ -1,10 +1,10 @@
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { Sidebar } from "./sidebar";
-import styles from "./Layout.module.css";
+import styles from "./LayoutContainer.module.css";
 import cn from "classnames";
 
-export default function RootLayout({
+export default function RootLayoutContainer({
   children,
 }: Readonly<{
   children: React.ReactNode;
