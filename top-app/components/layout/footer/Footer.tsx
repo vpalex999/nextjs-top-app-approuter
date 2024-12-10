@@ -4,8 +4,7 @@ import cn from "classnames";
 import styles from "./Footer.module.css";
 import { format } from "date-fns";
 
-interface FooterProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+type FooterProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 export const Footer = ({ className, ...props }: FooterProps) => {
   return (
