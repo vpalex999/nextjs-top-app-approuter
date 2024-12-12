@@ -18,6 +18,46 @@ export interface HomeProps {
   firstCategory: number;
 }
 
+export interface Advantage {
+  _id: string;
+  title: string;
+  description: string;
+}
+
+export interface HhData {
+  _id: string;
+  count: number;
+  juniorSalary: number;
+  middleSalary: number;
+  seniorSalary: number;
+  updateAt: Date;
+}
+
+export enum TopLevelCategory {
+  Courses,
+  Services,
+  Books,
+  Products,
+}
+
+export interface TopPageModel {
+  tags: string[];
+  _id: string;
+  secondaryCategory: string;
+  alias: string;
+  title: string;
+  category: string;
+  seoText: string;
+  tagsTitle: string;
+  metaTitle: string;
+  metaDescription: string;
+  firstCategory: TopLevelCategory;
+  advantages: Advantage[];
+  createdAt: Date;
+  updatedAt: Date;
+  hh: HhData;
+}
+
 // export interface FirstLevelMenuItem {
 //   route: string;
 //   name: string;

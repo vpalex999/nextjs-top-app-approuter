@@ -1,3 +1,4 @@
+import { TopPageModel } from "@/interfaces/menu.interface";
 import { API } from "../api";
 
 export const getPage = async (alias: string): Promise<TopPageModel | null> => {
