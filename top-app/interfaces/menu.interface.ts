@@ -13,6 +13,11 @@ export interface MenuItem {
   pages: PageItem[];
 }
 
+export interface HomeProps {
+  menu: MenuItem[];
+  firstCategory: number;
+}
+
 // export interface FirstLevelMenuItem {
 //   route: string;
 //   name: string;
